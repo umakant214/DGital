@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
+import ProgressBar from "@ramonak/react-progress-bar";
 import "aos/dist/aos.css";
 const About = () => {
   return (
@@ -18,52 +19,37 @@ const About = () => {
                 et eius repellat recusandae, amet maiores quos iusto facere
                 consequuntur sunt tenetur quod ratione adipisci!
               </p>
-              {/* Progess bar */}
-              <>
-                <p className="">Digital Marketing</p>
-                <div
-                  className="progress mb-3"
-                  role="progressbar"
-                  aria-label="Success example"
-                  aria-valuenow={25}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                >
-                  <div
-                    className="progress-bar bgcolor"
-                    style={{ width: "60%" }}
-                  />
-                </div>
-                <p className="">SEO & Backlinks</p>
-                <div
-                  className="progress mb-3"
-                  role="progressbar"
-                  aria-label="Info example"
-                  aria-valuenow={50}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                >
-                  <div
-                    className="progress-bar bg-info"
-                    style={{ width: "80%" }}
-                  />
-                </div>
-                <p className="">Design & Development</p>
-                <div
-                  className="progress"
-                  role="progressbar"
-                  aria-label="Warning example"
-                  aria-valuenow={75}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                >
-                  <div
-                    className="progress-bar bg-warning"
-                    style={{ width: "90%" }}
-                  />
-                </div>
-              </>
-
+              {/* Progress */}
+              <p>Digital Marketing</p>
+              <ProgressBar
+                completed={80}
+                labelColor="#e80909"
+                animateOnRender
+                dir="auto"
+              />
+              <p className="mt-2">SEO & Backlinks</p>
+              <ProgressBar
+                completed={95}
+                labelColor="#e80909"
+                animateOnRender
+                dir="auto"
+              />
+              <p className="mt-2">Design & Development</p>
+              <ProgressBar
+                completed={50}
+                bgColor="#2324c5"
+                labelColor="#ffaa00"
+                animateOnRender
+                dir="auto"
+              />
+              <p className="mt-2">App Development</p>
+              <ProgressBar
+                completed={70}
+                bgColor="#27dbe6"
+                labelColor="#ffaa00"
+                animateOnRender
+                dir="auto"
+              />
               {/* Progess bar */}
 
               <button className="btn bgcolor text-light p-2 px-4 rounded-5 mt-4">

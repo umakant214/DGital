@@ -10,6 +10,7 @@ import Newsletter from "./Newsletter";
 import Project from "./Project";
 import Testimonial from "./Testimonial";
 import Team from "./Team";
+import Typewriter from "typewriter-effect";
 const Home = () => {
   useEffect(() => {
     AOS.init();
@@ -17,12 +18,21 @@ const Home = () => {
   }, []);
   return (
     <div data-aos="fade-down" className="container-fluid  ">
-      <div className="row bgcolor pb-5  pt-5">
+      <div className="row bgcolor pb-5  pt-4">
         <div className="col-sm-6  p-5">
           <div className="row  p-4">
             <div className="col-sm-11  mx-auto">
               <h1 className="text-light ">
-                A Digital Agency Of Inteligents & Creative People
+                <Typewriter
+                  options={{
+                    strings: [
+                      " A Digital Agency Of Inteligents & Creative People",
+                    ],
+                    autoStart: true,
+                    delay: 50,
+                    loop: true,
+                  }}
+                />
               </h1>
               <p className=" text-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
