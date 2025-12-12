@@ -1,0 +1,13 @@
+:root {
+  --bgcolor: #6222cc;
+  --warningColor: #fba504;
+}
+.bgcolor {
+  background-color: var(--bgcolor);
+}
+.textColor {
+  color: var(--bgcolor);
+}
+.text-color {
+  color: var(--warningColor);
+}
