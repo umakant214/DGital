@@ -35,10 +35,9 @@ const Home = () => {
                 />
               </h1>
               <p className=" text-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae fuga odio iste, tenetur sed nisi tempore ex, iure
-                ipsum, veniam aliquid? Deserunt sequi iusto enim optio, officiis
-                eum eius in.
+                Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum
+                stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam.
+                Sit diam sit justo amet ipsum vero ipsum clita lorem
               </p>
               <button className="btn btn-warning px-4 py-2 rounded-5">
                 Read More

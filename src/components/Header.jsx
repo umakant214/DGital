@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bgcolor px-4 py-3 ">
+    <nav className="navbar navbar-expand-md navbar-dark bgcolor px-4 py-3 sticky-top ">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand fs-1 fw-bold text-light">
           DGital
